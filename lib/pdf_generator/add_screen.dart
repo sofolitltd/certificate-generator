@@ -3,16 +3,16 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-import 'pdf_generator/certificate_generator.dart';
+import 'certificate_generator.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class AddScreen extends StatefulWidget {
+  const AddScreen({super.key});
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<AddScreen> createState() => _AddScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _AddScreenState extends State<AddScreen> {
   bool _isLoading = false;
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   final TextEditingController _nameController = TextEditingController();
